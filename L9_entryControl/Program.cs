@@ -11,6 +11,7 @@ namespace L9_entryControl
         static void Main(string[] args)
         {
             bool isOpen = true;
+            string exitFromProgram = "exit";
             string userInput;
 
             while (isOpen)
@@ -19,10 +20,9 @@ namespace L9_entryControl
                 Console.WriteLine("Чтобы выйти из программы напишите слово - exit");
                 userInput = Console.ReadLine();
 
-                if (userInput == "exit")
+                if (userInput == exitFromProgram)
                     isOpen = false;
             }
-
         }
     }
 }
